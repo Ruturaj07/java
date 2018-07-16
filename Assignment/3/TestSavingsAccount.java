@@ -1,5 +1,5 @@
 class SavingsAccount{
-	static double annualInterestRate=4;
+	static double annualInterestRate=0.04;
 	private double savingsBalance;
 	SavingsAccount(double firstAmt){
 		savingsBalance = firstAmt;	
@@ -11,7 +11,7 @@ class SavingsAccount{
 		savingsBalance=savingsBalance+monthlyInterest;
 		System.out.println("Your Updated Balance is "+savingsBalance);
 	}
-	public static void modifyInterestRate(int newRate){
+	public static void modifyInterestRate(double newRate){
 		annualInterestRate = newRate;
 	}
 	
@@ -29,7 +29,7 @@ class TestSavingsAccount{
 	System.out.println("\nSaver 2:");
 	saver2.calculateMonthlyInterest();
 
-	SavingsAccount.modifyInterestRate(5);
+	SavingsAccount.modifyInterestRate(0.05);
 	
 	System.out.println("\nSaver 1:");
 	saver1.calculateMonthlyInterest();

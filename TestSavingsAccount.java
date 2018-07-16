@@ -5,13 +5,13 @@ class SavingsAccount{
 		savingsBalance = firstAmt;	
 	}
 	public void calculateMonthlyInterest(){
-		System.out.println("Your Account Balance is "+savingsBalance);
+		System.out.printf("Your Account Balance is %.2f\n",savingsBalance);
 		double monthlyInterest = savingsBalance*annualInterestRate/12;
-		System.out.println("Your Monthly Interest is "+monthlyInterest);
+		System.out.printf("Your Monthly Interest is %.2f\n",monthlyInterest);
 		savingsBalance=savingsBalance+monthlyInterest;
-		System.out.println("Your Updated Balance is "+savingsBalance);
+		System.out.printf("Your Updated Balance is %.2f\n",savingsBalance);
 	}
-	public static void modifyInterestRate(int newRate){
+	public static void modifyInterestRate(double newRate){
 		annualInterestRate = newRate;
 	}
 	
