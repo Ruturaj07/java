@@ -24,9 +24,9 @@ class circle implements area{
 class interfaceArea{
 	public static void main(String a[]){
 	Scanner sc = new Scanner(System.in);
-	rect r1 = new rect();
-	triangle t1 = new triangle();
-	circle c1 = new circle();
+	area r1 = new rect();
+	//area 
+	//area 
 	
 	double x;
 	double y;
@@ -35,16 +35,17 @@ class interfaceArea{
 	y=sc.nextDouble();
 	System.out.println("Area of rectangle is "+r1.compute(x,y));
 	
+	r1 = new triangle();
 	System.out.println("Enter base and height of triangle :");
 	x=sc.nextDouble();
 	y=sc.nextDouble();
-	System.out.println("Area of triangle is "+t1.compute(x,y));
-	
+	System.out.println("Area of triangle is "+r1.compute(x,y));
+	r1 = new circle();
 	
 	System.out.println("Enter radius of circle :");
 	x=sc.nextDouble();
 	y=x;
-	System.out.println("Area of triangle is "+c1.compute(x,y));
+	System.out.println("Area of triangle is "+r1.compute(x,y));
 	
 	}
 }
