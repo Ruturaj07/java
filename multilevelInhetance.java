@@ -24,6 +24,7 @@ class B extends A{
 class C extends B{
 	int a;
 	C(int x,int y,int z){
+
 		super(x,y);
 		a=z;	
 	}
