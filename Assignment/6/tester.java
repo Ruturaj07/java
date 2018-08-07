@@ -8,15 +8,25 @@ import math.*;
 import math.convert.*;
 class tester{
 	public static void main(String[] a){
-		int[] array = {1,2,3,4,5,6,7,8,9};
-		System.out.println("Mean  :"+Mean.calculateMean(array));
-		System.out.println("Median :"+Median.calculateMedian(array));
-		System.out.println("Average :"+Average.calculateAverage(array));
-		System.out.println("Standard Deviation :"+SD.calculateSD(array));
-		System.out.println("Decimal to Binary:"+decimal.toBinary(1234));
+		int n;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter size of array : ");
+		n = sc.nextInt();
+		int[] array = new int[n];
+		System.out.println("Enter array : ");
+		for(int i=0;i<n;i++)
+			array[i] = sc.nextInt();
+		System.out.println("\n\nMean \t\t\t:"+Mean.calculateMean(array));
+		System.out.println("Median \t\t\t:"+Median.calculateMedian(array));
+		System.out.println("Average \t\t:"+Average.calculateAverage(array));
+		System.out.println("Standard Deviation \t:"+SD.calculateSD(array));
 		
-		System.out.println("Decimal to Octal:"+octal.toOctal(1234));
-		System.out.println("Decimal to Hex:"+hex.toHex(10));
+		System.out.println("\n\n\nEnter Decimal Number to Convert : ");
+		int data = sc.nextInt();		
+		System.out.println("\nDecimal to Binary\t:"+decimal.toBinary(data));
+		
+		System.out.println("Decimal to Octal\t:"+octal.toOctal(data));
+		System.out.println("Decimal to Hex\t\t:"+hex.toHex(data));
 		
 	}
 }
