@@ -13,9 +13,10 @@ class tester{
 		System.out.println("Median :"+Median.calculateMedian(array));
 		System.out.println("Average :"+Average.calculateAverage(array));
 		System.out.println("Standard Deviation :"+SD.calculateSD(array));
-		System.out.println("Decimal to Binary:"+decimal.toBinary(8));
+		System.out.println("Decimal to Binary:"+decimal.toBinary(1234));
 		
-		System.out.println("Decimal to Octal:"+octal.toOctal(10));
+		System.out.println("Decimal to Octal:"+octal.toOctal(1234));
+		System.out.println("Decimal to Hex:"+hex.toHex(10));
 		
 	}
 }
