@@ -27,6 +27,18 @@ class tester{
 		
 		System.out.println("Decimal to Octal\t:"+octal.toOctal(data));
 		System.out.println("Decimal to Hex\t\t:"+hex.toHex(data));
-		
+
+
+		System.out.println("\n\n\nEnter Binary Number to Convert to Integer: ");
+		String data1 = sc.next();
+		System.out.println("\nDecimal\t:"+decimal.frBinToDec(data1));
+
+		System.out.println("\n\n\nEnter Octal Number to Convert to Integer: ");
+		String data2 = sc.next();
+		System.out.println("\nDecimal\t:"+decimal.frOctToDec(data1));
+
+		System.out.println("\n\n\nEnter Hex Number to Convert to Integer: ");
+		String data3 = sc.next();
+		System.out.println("\nDecimal\t:"+decimal.frHexToDec(data1));
 	}
 }

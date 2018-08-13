@@ -20,4 +20,13 @@ public class decimal{
 	
 	return reverse;
 	}
+	public static int frBinToDec(String str){
+		return Integer.parseInt(str,2);	
+	}
+	public static int frOctToDec(String str){
+		return Integer.parseInt(str,8);	
+	}
+	public static int frHexToDec(String str){
+		return Integer.parseInt(str,16);	
+	}
 }
