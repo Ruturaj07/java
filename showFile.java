@@ -19,7 +19,7 @@ class ShowFile {
     } catch(IOException e) {
       System.out.println("Error Reading File");
    }
-    // Close the file.
+
     try {
       fin.close();
     } catch(IOException e) {
