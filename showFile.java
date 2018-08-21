@@ -3,7 +3,7 @@ class ShowFile {
   public static void main(String args[])
   {
     int i;
-    FileInputStream fin
+    FileInputStream fin;
     
     try {
       fin = new FileInputStream("s1.txt");
