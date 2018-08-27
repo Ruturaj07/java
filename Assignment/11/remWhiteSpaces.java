@@ -10,7 +10,7 @@ class remWhiteSpaces{
 	FileWriter fw = null;
 	try{
 		fr = new FileReader(a[0]);
-		fw = new FileWriter(a[1]);//,true);
+		fw = new FileWriter(a[1]);
 		BufferedReader br = new BufferedReader(fr);
 		String str,str1;
 		while((str=br.readLine())!=null){
