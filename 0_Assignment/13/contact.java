@@ -47,7 +47,7 @@ public class contact extends JFrame implements ActionListener{
 		}
 		if(f.exists())
 		{
-			String str = "Name :"+name+"\nNumber:"+num+"\n";
+			String str = "Name :"+name+"\nNumber:"+num+"\n\n";
 			try{stream.write(str.getBytes());}
 			catch(Exception err){}
 		}
