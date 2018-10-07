@@ -1,17 +1,9 @@
-package chat;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+import java.net.*;
 
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.net.Socket;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JTextArea;
+import javax.swing.*;
 
 public class client extends JFrame implements ActionListener{
 	JTextArea tf1;
@@ -26,7 +18,6 @@ public class client extends JFrame implements ActionListener{
 	
 	
 	public client() {
-		// TODO Auto-generated constructor stub
 		tf1 = new JTextArea(33, 52);
 		add(tf1);
 		tf1.setText(chatString);
@@ -45,7 +36,6 @@ public class client extends JFrame implements ActionListener{
 	}
 	
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		socket = new Socket("localhost", 3000);
 		System.out.println("Connected to Server");
 		
@@ -62,14 +52,12 @@ public class client extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
 		String msg = tf2.getText();
 		chatString+=(csays+msg);
 		tf1.setText(chatString);
 		try {
 			dout.writeUTF(csays+msg);
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 	}
@@ -79,7 +67,6 @@ public class client extends JFrame implements ActionListener{
 			try {
 				msgrcvd = din.readUTF();
 			} catch (IOException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 			chatString+=msgrcvd;

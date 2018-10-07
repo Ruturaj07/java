@@ -1,15 +1,11 @@
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.LinkedList;
+import java.io.*;
+import java.util.*;
 
 public class linkedDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		File file = new File("./input.txt");
 		BufferedReader reader = null;
 		String st; 

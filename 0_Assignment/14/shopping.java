@@ -1,16 +1,6 @@
-package stationary;
-
-
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 public class shopping extends JFrame implements ActionListener {
 	JLabel l1;
@@ -20,7 +10,6 @@ public class shopping extends JFrame implements ActionListener {
 	int total=0;
 	
 	public shopping() {
-		// TODO Auto-generated constructor stub
 		l1 = new JLabel("Purchase Stationary");
 		c1 = new JCheckBox("NOTEBOOK @ 50");
 		c2 = new JCheckBox("PEN @ 30");
@@ -46,7 +35,6 @@ public class shopping extends JFrame implements ActionListener {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		shopping s = new shopping();
 	}
 
@@ -54,7 +42,6 @@ public class shopping extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
 		if(e.getSource()==order) {
 			total=0;
 			if(c1.isSelected())
@@ -69,7 +56,6 @@ public class shopping extends JFrame implements ActionListener {
 		
 		if(e.getSource()==c1) {
 			if (c1.isSelected()) {		
-//				System.out.println("c1 HAPPENDED");
 				String temp = JOptionPane.showInputDialog("Enter Quantity of notebooks:");
 				notebooks = Integer.parseInt(temp);
 				
@@ -77,13 +63,11 @@ public class shopping extends JFrame implements ActionListener {
 		}
 		if(e.getSource()==c2) {
 			if (c2.isSelected()) {
-//				System.out.println("c2 HAPPENDED");
 				String temp = JOptionPane.showInputDialog("Enter Quantity of pens:");
 				pens = Integer.parseInt(temp);
 			}
 		}if(e.getSource()==c3) {
 			if (c3.isSelected()) {
-//				System.out.println("c3 HAPPENDED");
 				String temp = JOptionPane.showInputDialog("Enter Quantity of pencils:");
 				pencils = Integer.parseInt(temp);
 		
