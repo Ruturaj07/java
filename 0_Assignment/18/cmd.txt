@@ -1,1 +1,1 @@
- export CLASSPATH=mysql-connector-java-8.0.12.jar:$CLASSPATH
+export CLASSPATH=mysql-connector-java-8.0.12.jar:$CLASSPATH

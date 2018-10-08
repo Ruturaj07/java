@@ -12,7 +12,7 @@ public class student extends JFrame implements ActionListener{
 	Statement statement;
 	String url = "jdbc:mysql://localhost/studentData";
 	String username = "root";
-	String password = "target";
+	String password = "ubuntu";
 	Connection connection = null;
 
 	public student() {

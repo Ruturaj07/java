@@ -1,4 +1,3 @@
-
 import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
@@ -13,7 +12,7 @@ public class demo2 extends JFrame implements ActionListener{
 	Statement statement;
 	String url = "jdbc:mysql://localhost/studentLogin";
 	String username = "root";
-	String password = "target";
+	String password = "ubuntu";
 	Connection connection = null;
 	
 	public demo2() {

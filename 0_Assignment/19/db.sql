@@ -1,4 +1,4 @@
---CREATE DATABASE studentData;
+CREATE DATABASE studentData;
 
 USE studentData;
 
